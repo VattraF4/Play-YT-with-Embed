@@ -1,4 +1,7 @@
 # Play-YT-with-Embed
-This is a mini project webpage that I use to play videos from YouTube and we can download video with IDM (Internet Download Mananger).
-Why play with this webpage ?
-    The reason is simple , because YouTube on Google Chrome brower don't let we download with IDM. In this case I write this webpage to let IDM work with it.
+
+This mini project webpage allows you to play YouTube videos and download them using IDM (Internet Download Manager).
+
+## Why use this webpage?
+
+YouTube on Google Chrome doesn't allow downloads with IDM. This webpage is designed to enable IDM to work seamlessly with YouTube videos.

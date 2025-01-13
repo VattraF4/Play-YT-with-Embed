@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed YouTube Video</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Download YouTube Video with ID and IDM</h2>
+        <p class="text-center">Just input ID youtube. <br>
+            <span>Example: https://www.youtube.com/watch?v=<strong>SiUwcDUYcuc</strong></span>
+        </p>
+
+        <form class="form-inline justify-content-center" onsubmit="event.preventDefault(); updateVideo();">
+            <div class="form-group mb-2">
+                <input type="text" class="form-control" id="videoId" name="name" placeholder="Video ID Ex: SiUwcDUYcuc"
+                    value="uJEqekoJjsY">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 ml-2">Submit</button>
+        </form>
+        <br>
+
+        <!-- YouTube Video Embed -->
+        <div class="embed-responsive embed-responsive-16by9 mx-auto" style="max-width: 560px;">
+            <iframe id="youtubePlayer" class="embed-responsive-item" src="https://www.youtube.com/embed/SiUwcDUYcuc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <br><br>
+    <p class="text-center" id="copyright"></p>
+
+    </div>
+</body>
+
+</html>
